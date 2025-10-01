@@ -2,9 +2,6 @@ name: Kernel Build (lineage-21 + SukiSU Ultra)
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - lineage-21
 
 jobs:
   build:
