@@ -1,4 +1,4 @@
-name: Kernel Build (lineage-22.2 + AOSP Clang + SukiSU Ultra)
+name: Kernel Build (lineage-22.2 + AOSP Clang + KSUN)
 
 on:
   workflow_dispatch:
