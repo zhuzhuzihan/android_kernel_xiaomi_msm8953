@@ -1,4 +1,4 @@
-name: Kernel Build (lineage-22.2 + AOSP Clang + KSUN)
+name: Kernel Build (lineage-22.2 + AOSP Clang + ReSukisu)
 
 on:
   workflow_dispatch:
@@ -49,8 +49,8 @@ jobs:
 
       - name: Apply KernelSU (KernelSU Next)
         run: |
-          curl -LSs "https://raw.githubusercontent.com/KernelSU-Next/KernelSU-Next/next/kernel/setup.sh" | bash -
-
+          curl -LSs "https://raw.githubusercontent.com/ReSukiSU/ReSukiSU/main/kernel/setup.sh" | bash
+          
       - name: Set environment
         run: |
           echo "PATH=$HOME/aosp-clang/clang-r450784d/bin:$PATH" >> $GITHUB_ENV
